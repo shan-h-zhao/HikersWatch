@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(@NonNull Location location) {
-                Log.i("location", location.toString());
+                updateLocationInfo(location);
             }
         };
 
